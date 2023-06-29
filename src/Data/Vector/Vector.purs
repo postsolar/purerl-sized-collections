@@ -1,4 +1,55 @@
-module Data.Vector where
+module Data.Vector
+  ( class NonNegative
+  , class Positive
+  , class Sub
+  , class IndexVector
+  , toInt
+  , Vector
+  , _V
+  , _V'
+  , fromList
+  , toList
+  , toNonEmptyList
+  , fromArray
+  , toArray
+  , fromFoldable
+  , toUnfoldable
+  , size
+  , singleton
+  , empty
+  , cons
+  , (:+)
+  , uncons
+  , first
+  , tail
+  , snoc
+  , unsnoc
+  , last
+  , init
+  , index
+  , (!!)
+  , reverse
+  , range'
+  , range
+  , (..)
+  , slice
+  , take
+  , drop
+  , zipWith
+  , zipWithA
+  , zip
+  , unzip
+  , insertAt
+  , deleteAt
+  , updateAt
+  , modifyAt
+  , sort
+  , sortBy
+  , elemIndex
+  , elemLastIndex
+  , generate
+  , generate'
+  ) where
 
 import Prelude
 
