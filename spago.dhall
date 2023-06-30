@@ -10,16 +10,19 @@ When creating a new Spago project, you can use
 `spago init --no-comments` or `spago init -C`
 to generate this file without the comments in this block.
 -}
-{ name = "my-project"
+{ name = "sized-collections"
 , dependencies =
   [ "arrays"
+  , "assert"
   , "console"
   , "distributive"
   , "effect"
   , "either"
   , "erl-lists"
   , "erl-maps"
+  , "erl-test-eunit"
   , "foldable-traversable"
+  , "free"
   , "maybe"
   , "partial"
   , "prelude"
