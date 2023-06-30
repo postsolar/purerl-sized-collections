@@ -214,5 +214,5 @@ instance Apply (IndexMap s) where
 
 instance NonNegative s ⇒ Applicative (IndexMap s) where
   pure x = (V.replicate x ∷ _ s _)
-    # \(V.Vector l) → unsafePartial $ fromJust $ fromList l
+    # \v → unsafePartial $ fromJust $ fromList $ unsafeCoerce v
 

@@ -1,11 +1,9 @@
 module Test.Main where
 
-import Prelude
-
 import Effect (Effect)
-import Effect.Class.Console (log)
+import Test.Data.Vector as VectorTests
+import Erl.Test.EUnit as EUnit
 
-main :: Effect Unit
+main :: Effect Boolean
 main = do
-  log "🍝"
-  log "You should add some tests."
+  EUnit.runTests VectorTests.main

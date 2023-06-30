@@ -26,6 +26,7 @@ module Data.Vector
   , unsnoc
   , last
   , init
+  , replicate
   , index
   , (!!)
   , reverse
@@ -328,8 +329,8 @@ range i j = Vector $ List.range (toInt i) (toInt j)
 
 infix 8 range as ..
 
--- | Slices a vector from start index (inclusive) to end index
--- | (non-inclusive).
+-- | Slices a vector from start index **(inclusive)** to end index
+-- | **(non-inclusive)**.
 -- The type sig here is a bit more complicated than it should
 -- be because List.slice's last index is not inclusive, but we
 -- need to be able to get the last element too.
